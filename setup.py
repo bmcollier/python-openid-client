@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="python-openid-client", # Replace with your own username
-    version="0.1dev",
+    version="0.11dev",
     author="Ben Collier",
     author_email="bencollier@fastmail.com",
     description="OIDC client library",
