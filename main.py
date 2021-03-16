@@ -1,16 +1,18 @@
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+from src.openidclient import client
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+def run():
+    grant_type = "password"
+    client_id = "test"
+    client_secret = "9629249e-be2d-41f0-b057-1431d0401ba9",
+    username = "ben"
+    password = "wilson1"
+    scope = "openid"
+    endpoint = "http://localhost:8080/auth/realms/master/protocol/openid-connect/token"
+    connection = client.Connection(endpoint)
+    print(connection.get_token(grant_type, client_id, client_secret, username, password, scope))
 
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    run()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
