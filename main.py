@@ -1,5 +1,5 @@
 from src.openidclient import client
-
+from src.callback import server
 
 def run():
     grant_type = "password"
@@ -12,7 +12,8 @@ def run():
     connection = client.Connection(endpoint)
     print(connection.get_token(grant_type, client_id, client_secret, username, password, scope))
 
+
 if __name__ == '__main__':
-    run()
+    server.serve()
 
 
