@@ -1,4 +1,4 @@
-from src.openidclient import client
+from src.openidclient import xxclient
 from src.callback import server
 
 def run():
@@ -9,7 +9,7 @@ def run():
     password = "wilson1"
     scope = "openid"
     endpoint = "http://localhost:8080/auth/realms/master/protocol/openid-connect/token"
-    connection = client.Connection(endpoint)
+    connection = xxclient.Connection(endpoint)
     print(connection.get_token(grant_type, client_id, client_secret, username, password, scope))
 
 

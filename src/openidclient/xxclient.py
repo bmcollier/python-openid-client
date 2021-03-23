@@ -1,6 +1,5 @@
 import requests
 
-
 class Connection:
 
     def __init__(self, url): #, auth_token_endpoint, token_endpoint, client_id, client_secret, scope):
