@@ -4,8 +4,8 @@ print('Discovered issuer {} {}', issuer.name, issuer.metadata)
 
 #second test
 client = issuer.Client({
-  "client_id": 'zELcpfANLqY7Oqas',
-  "client_secret": 'TQV5U29k1gHibH5bx1layBo0OSAvAbRT3UYW3EWrSYBB5swxjVfWUa1BS8lqzxG/0v9wruMcrGadany3',
+  "client_id": 'zELcpfA44NLqY7Oqas',
+  "client_secret": 'TQV5U29k1gHibH5bx1layBoajosdifjaso8WrSYBB5swxjVfWUa1BS8lqzxG/0v9wruMcrGadany3',
   "redirect_uris": ['http://localhost:3000/cb'],
   "response_types": ['code'],
   # id_token_signed_response_alg (default "RS256")
